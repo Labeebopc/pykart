@@ -1,3 +1,7 @@
 from django.db import models
 
-# Create your models here.
+# Theme model
+
+class SiteSettings(models.Model):
+    image = models.ImageField(upload_to = 'media/site/')
+    caption = models.TextField()
