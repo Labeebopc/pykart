@@ -7,10 +7,7 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index, name='home'),
-    path('product_list', views.product_list, name='product_list'),
-    path('product_details', views.product_details, name='product_details'),
+    path('account', views.show_account, name='account'),
 ]
 
 urlpatterns+= static(settings.MEDIA_URL, document_root= settings.MEDIA_ROOT)
-

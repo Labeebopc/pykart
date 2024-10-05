@@ -6,10 +6,10 @@
     <nav>
         <ul id="MenuItems">
             <li><a href="{% url 'home'%}">Home</a></li>
-            <li><a href="{% url 'list_product'%}">Products</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="account.html">Account</a></li>
+            <li><a href="{% url 'product_list'%}">Products</a></li>
+            <!-- <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li> -->
+            <li><a href="{% url 'account'%}">Account</a></li>
         </ul>
     </nav>
     <a href="cart.html"><img src="{% static 'images/cart.png' %}" width="30px" height="30px"></a>
