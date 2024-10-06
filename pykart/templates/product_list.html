@@ -1,5 +1,6 @@
 {% load static %}
-{%load chunks%}
+<!-- {%load chunks%} -->
+
 <div class="small-container">
     <div class="row row-2">
         <h2>All Products</h2>
@@ -11,11 +12,12 @@
             <option>Sort By Sale</option>
         </select>
     </div>
-    {% for product_chunks in products | chunks:4%}
+    <!-- {% for product_chunks in products | chunks:4%} -->
     <div class="row">
-        {% for product in product_chunks%}
+        <!-- {% for product in product_chunks%} -->
         <div class="col-4">
-            <img src="{% static 'images/product-1.jpg' %}"></a>
+            <a href="{%url 'product_details'%}"><img src="{% static 'images/product-1.jpg' %}"></a>
+            <!-- <a href="{%url 'product_details' product.id %}"><img src="{% static 'images/product-1.jpg' %}"></a> -->
             <!-- <img src="{{product.image.url}}"></a> -->
             <!-- <h4>{{product.title}}</h4> -->
             <h4>Red Printed T-Shirt</h4>

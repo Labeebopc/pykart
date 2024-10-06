@@ -9,10 +9,10 @@ def index(request):
 
 def product_list(request):
 
-    # To calculate requested page
-    page = 1
-    if request.GET:
-        page = request.GET.get("page", 1)
+    # # To calculate requested page
+    # page = 1
+    # if request.GET:
+    #     page = request.GET.get("page", 1)
 
     # Fetch products
     fetchProducts = Product.objects.all()
@@ -20,7 +20,7 @@ def product_list(request):
     # Pagination
     product_paginator = Paginator(fetchProducts, 2)
 
-    fetchProducts = product_paginator.get_page(page)
+    # fetchProducts = product_paginator.get_page(page)
 
     # Create a dictionary
     context = {
@@ -28,6 +28,12 @@ def product_list(request):
     }
     return render(request, 'products.html', context)
 
-def product_details(request):
-    return render(request, 'product_details.html')
+def product_details(request, pk):
+    fetchById = Product.objects.get(pk=pk) #pk=> primary key
+
+    # Create a dictionary
+    context = {
+        "product" : fetchById
+    }
+    return render(request, 'product_details.html', context)
 
