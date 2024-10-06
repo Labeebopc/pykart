@@ -1,4 +1,5 @@
 {% load static %}
+<!-- {%load chunks%} -->
 
 <div class="small-container">
     <div class="row row-2">
@@ -11,9 +12,14 @@
             <option>Sort By Sale</option>
         </select>
     </div>
+    <!-- {% for product_chunks in products | chunks:4%} -->
     <div class="row">
+        <!-- {% for product in product_chunks%} -->
         <div class="col-4">
-            <a href="{%%}"><img src="{% static 'images/product-1.jpg' %}"></a>
+            <a href="{%url 'product_details'%}"><img src="{% static 'images/product-1.jpg' %}"></a>
+            <!-- <a href="{%url 'product_details' product.id %}"><img src="{% static 'images/product-1.jpg' %}"></a> -->
+            <!-- <img src="{{product.image.url}}"></a> -->
+            <!-- <h4>{{product.title}}</h4> -->
             <h4>Red Printed T-Shirt</h4>
             <div class="rating">
                 <i class="fa fa-star"></i>
@@ -22,8 +28,10 @@
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star-o"></i>
             </div>
+            <!-- <p>{{product.price}}</p> -->
             <p>$50.00</p>
         </div>
+        <!-- {% endfor %} -->
         <div class="col-4">
             <img src="{% static 'images/product-2.jpg' %}">
             <h4>Red Printed T-Shirt</h4>
@@ -161,11 +169,27 @@
             <p>$50.00</p>
         </div>
     </div>
+
+    {% endfor %}
     <div class="page-btn">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
+        <!-- {{% if products.has_previous %}}
+        <a href="?page={{products.previous_page_number}}"><span><<</span></a>
+        {{%endif%}} -->
+
+        <!-- {{% for i in products.paginator.page_range%}}
+        <a href="?page={{i}}"><span>{{i}}</span></a>
+        {% endfor %} -->
+
+        
+        <!-- {{% if products.has_next %}}
+        <a href="?page={{products.next_page_number}}"><span>>></span></a>
+        {{%endif%}} -->
+
+        <a href="?page=1"><span>1</span></a>
+        <a href="?page=2"><span>2</span></a>
+        <a href="?page=3"><span>3</span></a>
+        <a href="?page=4"><span>4</span></a>
+        <a href="?page=5"><span>5</span></a>
         <span>&#8594;</span>
     </div>
 </div>
