@@ -30,7 +30,7 @@ Python Django-based e-commerce platform, designed to provide a seamless and effi
     
 👉 **User Management:** Streamlined management of user accounts.
     
-👉 Account Management:** Role-based account management for admins and users.
+👉 **Account Management:** Role-based account management for admins and users.
     
 👉 **Product Management:** Display and management of newly added products.
     
