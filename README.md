@@ -38,8 +38,11 @@ Python Django-based e-commerce platform, designed to provide a seamless and effi
 
 and many more,
 #
-![127 0 0 1_8000_admin_](https://github.com/user-attachments/assets/70d1c68b-6cee-432c-bec9-43c09f64c123)
-![localhost_8000_orders_cart](https://github.com/user-attachments/assets/9a572082-4202-437a-801c-ae6e6a0dcd9e)
-![localhost_8000_customer_account_register](https://github.com/user-attachments/assets/4e014375-6362-4c6c-8f56-2e42b795f0a2)
-![localhost_8000_customer_account_login](https://github.com/user-attachments/assets/5405e399-d527-4505-8ff3-9db5ac901bb9)
 ![localhost_8000_](https://github.com/user-attachments/assets/5d7b30ab-ecec-4700-ad0d-4f807d49f0ea)
+![localhost_8000_customer_account_login](https://github.com/user-attachments/assets/5405e399-d527-4505-8ff3-9db5ac901bb9)
+![localhost_8000_customer_account_register](https://github.com/user-attachments/assets/4e014375-6362-4c6c-8f56-2e42b795f0a2)
+![localhost_8000_orders_cart](https://github.com/user-attachments/assets/9a572082-4202-437a-801c-ae6e6a0dcd9e)
+![127 0 0 1_8000_admin_](https://github.com/user-attachments/assets/70d1c68b-6cee-432c-bec9-43c09f64c123)
+
+
+
