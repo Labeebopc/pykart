@@ -5,8 +5,9 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'index.html')
 
-def list_products(request):
+def product_list(request):
     return render(request, 'products.html')
 
-def detail_products(request):
+def product_details(request):
     return render(request, 'product_details.html')
+
